@@ -1,15 +1,15 @@
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AeropuertoEntity } from 'D:/UniAndes/Octavo_Semestre/Web/Parcial2/Simulacro/my-simulacro-app/src/aeropuerto/aeropuerto.entity';
-import { AerolineaEntity } from 'D:/UniAndes/Octavo_Semestre/Web/Parcial2/Simulacro/my-simulacro-app/src/aerolinea/aerolinea.entity';
+import { SocioEntity } from 'src/socio/socio.entity'; 
+import { ClubEntity } from 'src/club/club.entity';
 
 export const TypeOrmTestingConfig = () => [
  TypeOrmModule.forRoot({
    type: 'sqlite',
    database: ':memory:',
    dropSchema: true,
-   entities: [AerolineaEntity, AeropuertoEntity],
+   entities: [SocioEntity, ClubEntity],
    synchronize: true,
    keepConnectionAlive: true
  }),
- TypeOrmModule.forFeature([AerolineaEntity, AeropuertoEntity]),
+ TypeOrmModule.forFeature([SocioEntity, ClubEntity]),
 ];
