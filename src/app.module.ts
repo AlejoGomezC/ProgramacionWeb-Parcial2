@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { AerolineaModule } from './aerolinea/aerolinea.module';
-import { AeropuertoModule } from './aeropuerto/aeropuerto.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AerolineaEntity } from './aerolinea/aerolinea.entity';
-import { AeropuertoEntity } from './aeropuerto/aeropuerto.entity';
+import { SocioEntity } from './socio/socio.entity';
+import { ClubEntity } from './club/club.entity';
+import { SocioModule } from './socio/socio.module';
+import { ClubModule } from './club/club.module';
 
 @Module({
-  imports: [AerolineaModule, AeropuertoModule,
+  imports: [SocioEntity, ClubEntity,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
@@ -16,11 +16,13 @@ import { AeropuertoEntity } from './aeropuerto/aeropuerto.entity';
       username: 'postgres',
       password: 'postgres',
       database: 'parcial2_db',
-      entities: [AerolineaEntity, AeropuertoEntity],
+      entities: [SocioEntity, ClubEntity],
       dropSchema: true,
       synchronize: true,
       keepConnectionAlive: true
     }),
+    SocioModule,
+    ClubModule,
 
   ],
   controllers: [AppController],
