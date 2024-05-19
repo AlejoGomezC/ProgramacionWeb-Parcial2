@@ -17,7 +17,7 @@ export class SocioService {
     }
 
     async findOne(id: string): Promise<SocioEntity> {
-        const Socio: SocioEntity = await this.socioRepository.findOne({where: {id}, relations: ["club"] } );
+        const Socio: SocioEntity = await this.socioRepository.findOne({where: {id}, relations: ["clubs"] } );
         if (!Socio)
           throw new BusinessLogicException("The socio with the given id was not found", BusinessError.NOT_FOUND);
    
