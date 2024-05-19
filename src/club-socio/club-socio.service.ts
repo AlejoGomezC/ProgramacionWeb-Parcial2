@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { ClubEntity } from 'src/club/club.entity';
-import { BusinessError, BusinessLogicException } from 'src/shared/errors/business-errors';
-import { SocioEntity } from 'src/socio/socio.entity';
+import { ClubEntity } from '../club/club.entity'
+import { BusinessError, BusinessLogicException } from '../shared/errors/business-errors';
+import { SocioEntity } from '../socio/socio.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()
@@ -70,7 +70,7 @@ export class ClubSocioService {
         return await this.clubRepository.save(club);
     }
     
-    async deleteSocioFromClub(clubId: string, socioId: string){
+    async deleteMemberFromClub(clubId: string, socioId: string){
         const socio: SocioEntity = await this.socioRepository.findOne({where: {id: socioId}});
         if (!socio)
           throw new BusinessLogicException("The socio with the given id was not found", BusinessError.NOT_FOUND);

@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { ClubSocioService } from './club-socio.service';
-import { ClubEntity } from 'src/club/club.entity';
-import { SocioEntity } from 'src/socio/socio.entity';
+import { ClubEntity } from '../club/club.entity'
+import { SocioEntity } from '../socio/socio.entity'
 import { Repository } from 'typeorm';
 import { faker } from '@faker-js/faker';
 
