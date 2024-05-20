@@ -1,0 +1,1412 @@
+{
+	"info": {
+		"_postman_id": "3eb1c237-8493-4ceb-ab4a-f2c11d604c88",
+		"name": "Asociación",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35040166",
+		"_collection_link": "https://programacion-web.postman.co/workspace/Team-Workspace~5441f5a2-ad6b-4a79-816f-1047b05be38e/collection/35040166-3eb1c237-8493-4ceb-ab4a-f2c11d604c88?action=share&source=collection_link&creator=35040166"
+	},
+	"item": [
+		{
+			"name": "Crear Club 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = pm.response.json()\r",
+							"pm.globals.set(\"club_id_1\", data.id);\r",
+							"\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"   pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Carmel Club 1\",\r\n    \"fechaFundacion\": \"1960\",\r\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\r\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/clubs",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Crear Club 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carmel Club 1\",\r\n    \"fechaFundacion\": \"1960\",\r\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\r\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clubs",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "287"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11f-4XMa0yP8ymX55sjIEOqsKhrQ68I\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:29:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Carmel Club 1\",\n    \"fechaFundacion\": \"1960\",\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\",\n    \"id\": \"ee451e75-c67d-4802-be20-4f7647f6aa9c\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Crear Club 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = pm.response.json()\r",
+							"pm.globals.set(\"club_id_2\", data.id);\r",
+							"\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"   pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Carmel Club 2\",\r\n    \"fechaFundacion\": \"1960\",\r\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\r\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/clubs",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Crear Club 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carmel Club 2\",\r\n    \"fechaFundacion\": \"1960\",\r\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\r\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clubs",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "287"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11f-j71sQ1Ws5FRmp2WuCwoLQUUn7YI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:29:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Carmel Club 2\",\n    \"fechaFundacion\": \"1960\",\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\",\n    \"id\": \"dc596743-88ef-4bc6-af98-9fd70c612b94\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Crear Socio 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = pm.response.json()\r",
+							"pm.globals.set(\"socio_id_1\", data.id);\r",
+							"\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"   pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Socio de Prueba 1\",\r\n  \"correoElectronico\": \"socio@prueba.com\",\r\n  \"fechaNacimiento\": \"1990-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/members",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"members"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Crear Socio 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Socio de Prueba 1\",\r\n  \"correoElectronico\": \"socio@prueba.com\",\r\n  \"fechaNacimiento\": \"1990-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/members",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"members"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "144"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"90-9HxmKT/M+oIBlTCNlXa3l6GeER4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:30:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Socio de Prueba 1\",\n    \"correoElectronico\": \"socio@prueba.com\",\n    \"fechaNacimiento\": \"1990-01-01\",\n    \"id\": \"7362e4fe-4515-4513-a00d-3e7dcd4a66a5\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Crear Socio 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = pm.response.json()\r",
+							"pm.globals.set(\"socio_id_2\", data.id);\r",
+							"\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"   pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Socio de Prueba 2\",\r\n  \"correoElectronico\": \"socio@prueba.com\",\r\n  \"fechaNacimiento\": \"1990-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/members",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"members"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Crear Socio 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Socio de Prueba 2\",\r\n  \"correoElectronico\": \"socio@prueba.com\",\r\n  \"fechaNacimiento\": \"1990-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/members",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"members"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "144"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"90-PuHV/ppOQI1CpEyV3SAQY41yjrA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:30:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Socio de Prueba 2\",\n    \"correoElectronico\": \"socio@prueba.com\",\n    \"fechaNacimiento\": \"1990-01-01\",\n    \"id\": \"7c635b6c-1869-4c94-8be1-20c17f468084\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Agregar un Socio a un Club",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"   pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/{{socio_id_1}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_1}}",
+						"members",
+						"{{socio_id_1}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Agregar un Socio a un Club",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/{{socio_id_1}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_1}}",
+								"members",
+								"{{socio_id_1}}"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "477"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1dd-100oNGfhiu8XgL0xixk0pxn21a0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:31:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"ee451e75-c67d-4802-be20-4f7647f6aa9c\",\n    \"nombre\": \"Carmel Club 1\",\n    \"fechaFundacion\": \"1960-01-01T05:00:00.000Z\",\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\",\n    \"socios\": [\n        {\n            \"id\": \"7362e4fe-4515-4513-a00d-3e7dcd4a66a5\",\n            \"nombre\": \"Socio de Prueba 1\",\n            \"correoElectronico\": \"socio@prueba.com\",\n            \"fechaNacimiento\": \"1990-01-01T05:00:00.000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Agregar un Socio a un Club 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"   pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_2}}/members/{{socio_id_2}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_2}}",
+						"members",
+						"{{socio_id_2}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Agregar un Socio a un Club 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_2}}/members/{{socio_id_2}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_2}}",
+								"members",
+								"{{socio_id_2}}"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "477"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1dd-sVsACpndMdpToYhoObfwReeI7kA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:31:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"dc596743-88ef-4bc6-af98-9fd70c612b94\",\n    \"nombre\": \"Carmel Club 2\",\n    \"fechaFundacion\": \"1960-01-01T05:00:00.000Z\",\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\",\n    \"socios\": [\n        {\n            \"id\": \"7c635b6c-1869-4c94-8be1-20c17f468084\",\n            \"nombre\": \"Socio de Prueba 2\",\n            \"correoElectronico\": \"socio@prueba.com\",\n            \"fechaNacimiento\": \"1990-01-01T05:00:00.000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Asociar un Socio que no existe a un Club",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"   pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get expected error message\", function () {\r",
+							"   var data = pm.response.json();\r",
+							"   pm.expect(data.message).to.eql(\"The socio with the given id was not found\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Socio sin Email\",\r\n  \"email\": \"\",\r\n  \"birthDate\": \"1990-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/00000000-0000-0000-0000-000000000000",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_1}}",
+						"members",
+						"00000000-0000-0000-0000-000000000000"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Asociar un Socio que no existe a un Club",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Socio sin Email\",\r\n  \"email\": \"\",\r\n  \"birthDate\": \"1990-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_1}}",
+								"members",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"48-bwnpeMUXrEhj/yH+5wnK/qRqWVQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:31:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 404,\n    \"message\": \"The socio with the given id was not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Obtener todos los Socios de un Club",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Number of Socios > ' + 0, function () {\r",
+							"   var data = pm.response.json()\r",
+							"   pm.expect(data.length).to.greaterThan(0)\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_1}}",
+						"members"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Obtener todos los Socios de un Club",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_1}}",
+								"members"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "160"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a0-QUpzkRdA2LYuvzRwOfJzojLNBio\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:31:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"7362e4fe-4515-4513-a00d-3e7dcd4a66a5\",\n        \"nombre\": \"Socio de Prueba 1\",\n        \"correoElectronico\": \"socio@prueba.com\",\n        \"fechaNacimiento\": \"1990-01-01T05:00:00.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Obtener un Socio que pertenece a un Club",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/{{socio_id_1}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_1}}",
+						"members",
+						"{{socio_id_1}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Obtener un Socio que pertenece a un Club",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/{{socio_id_1}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_1}}",
+								"members",
+								"{{socio_id_1}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "158"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9e-AhTNvVrzMvhkhc0NSInqdRuSLdg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:31:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"7362e4fe-4515-4513-a00d-3e7dcd4a66a5\",\n    \"nombre\": \"Socio de Prueba 1\",\n    \"correoElectronico\": \"socio@prueba.com\",\n    \"fechaNacimiento\": \"1990-01-01T05:00:00.000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Obtener un Socio que no es parte de un Club",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 412\", function () {\r",
+							"   pm.response.to.have.status(412);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get expected error message\", function () {\r",
+							"   var data = pm.response.json();\r",
+							"   pm.expect(data.message).to.eql(\"The socio with the given id is not associated to the club\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/{{socio_id_2}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_1}}",
+						"members",
+						"{{socio_id_2}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Obtener un Socio que no es parte de un Club",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/{{socio_id_2}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_1}}",
+								"members",
+								"{{socio_id_2}}"
+							]
+						}
+					},
+					"status": "Precondition Failed",
+					"code": 412,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"58-76p33Uc/AxuWehglqmKz+paAee4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:31:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 412,\n    \"message\": \"The socio with the given id is not associated to the club\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Actualizar los Socios que pertenecen a un Club",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"   pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Socio Actualizado\",\r\n  \"correoElectronico\": \"socio@actualizado.com\",\r\n  \"fechaNacimiento\": \"1990-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_1}}",
+						"members"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Actualizar los Socios que pertenecen a un Club",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Socio Actualizado\",\r\n  \"correoElectronico\": \"socio@actualizado.com\",\r\n  \"fechaNacimiento\": \"1990-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_1}}",
+								"members"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "422"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a6-SqfVP491K9/wumOmTFVgnsOeLq4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:31:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"ee451e75-c67d-4802-be20-4f7647f6aa9c\",\n    \"nombre\": \"Carmel Club 1\",\n    \"fechaFundacion\": \"1960-01-01T05:00:00.000Z\",\n    \"imagen\": \"https://carmelclub.com.co/wp-content/uploads/2021/04/20191115_193817-1-800x550.jpg\",\n    \"descripcion\": \"Centro social ubicado dentro de la ciudad, con más de 60 años de funcionamiento.\",\n    \"socios\": {\n        \"nombre\": \"Socio Actualizado\",\n        \"correoElectronico\": \"socio@actualizado.com\",\n        \"fechaNacimiento\": \"1990-01-01\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Actualizar los socios de un club, con un socio inexistente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"   pm.response.to.have.status(404);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Socio Actualizado\",\r\n  \"correoElectronico\": \"socio@actualizado.com\",\r\n  \"fechaNacimiento\": \"1990-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/00000000-0000-0000-0000-000000000000",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_1}}",
+						"members",
+						"00000000-0000-0000-0000-000000000000"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Actualizar los socios de un club, con un socio inexistente",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Socio Actualizado\",\r\n  \"correoElectronico\": \"socio@actualizado.com\",\r\n  \"fechaNacimiento\": \"1990-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_1}}/members/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_1}}",
+								"members",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "157"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9d-2b/j7KKyKF+szUd4xm27fi8W6d8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:32:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Cannot PUT /api/v1/clubs/ee451e75-c67d-4802-be20-4f7647f6aa9c/members/00000000-0000-0000-0000-000000000000\",\n    \"error\": \"Not Found\",\n    \"statusCode\": 404\n}"
+				}
+			]
+		},
+		{
+			"name": "Eliminar un socio que es parte de un club",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {\r",
+							"   pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_2}}/members/{{socio_id_2}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_2}}",
+						"members",
+						"{{socio_id_2}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Eliminar un socio que es parte de un club",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_2}}/members/{{socio_id_2}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_2}}",
+								"members",
+								"{{socio_id_2}}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:32:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Eliminar un socio que no es parte de un club",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 412\", function () {\r",
+							"   pm.response.to.have.status(412);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get expected error message\", function () {\r",
+							"   var data = pm.response.json();\r",
+							"   pm.expect(data.message).to.eql(\"The socio with the given id is not associated to the club\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/clubs/{{club_id_2}}/members/{{socio_id_1}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"clubs",
+						"{{club_id_2}}",
+						"members",
+						"{{socio_id_1}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Eliminar un socio que no es parte de un club",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/clubs/{{club_id_2}}/members/{{socio_id_1}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clubs",
+								"{{club_id_2}}",
+								"members",
+								"{{socio_id_1}}"
+							]
+						}
+					},
+					"status": "Precondition Failed",
+					"code": 412,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"58-76p33Uc/AxuWehglqmKz+paAee4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 02:32:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 412,\n    \"message\": \"The socio with the given id is not associated to the club\"\n}"
+				}
+			]
+		}
+	]
+}

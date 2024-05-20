@@ -1,0 +1,480 @@
+{
+	"id": "f591b7c1-1286-4bac-b137-be4aa3169b77",
+	"name": "Asociación",
+	"timestamp": "2024-05-20T02:22:59.229Z",
+	"collection_id": "35040166-3eb1c237-8493-4ceb-ab4a-f2c11d604c88",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 18,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-05-20T02:22:58.256Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f38caf92-206d-4bd0-a505-606c932bf7b5",
+			"name": "Crear Club 1",
+			"url": "http://localhost:3000/api/v1/clubs",
+			"time": 24,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "226712f7-56dc-4dd2-b003-03afc919ddd6",
+			"name": "Crear Club 2",
+			"url": "http://localhost:3000/api/v1/clubs",
+			"time": 11,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "fcef159a-44b5-4ba4-8f86-4bb7bdc3f23a",
+			"name": "Crear Socio 1",
+			"url": "http://localhost:3000/api/v1/members",
+			"time": 9,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "55dd20ec-a126-411e-9cf6-3a16b3d5177a",
+			"name": "Crear Socio 2",
+			"url": "http://localhost:3000/api/v1/members",
+			"time": 8,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "e787705f-688b-4211-b748-70d8b2a1bc72",
+			"name": "Agregar un Socio a un Club",
+			"url": "http://localhost:3000/api/v1/clubs/84b96c59-fa7b-4929-a7bb-7289c6960bd0/members/d1fb4b06-b51f-484b-bea7-b608dd704c5c",
+			"time": 23,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "223fbefc-8a35-4672-9263-878c45440f65",
+			"name": "Agregar un Socio a un Club 2",
+			"url": "http://localhost:3000/api/v1/clubs/30093f1a-cb84-4841-a91a-f211cbc34401/members/1edc4121-1eb1-4da7-b8d8-847f81a362b9",
+			"time": 16,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "9c0a03aa-b9cb-4928-82a7-3413f0c0b366",
+			"name": "Asociar un Socio que no existe a un Club",
+			"url": "http://localhost:3000/api/v1/clubs/84b96c59-fa7b-4929-a7bb-7289c6960bd0/members/00000000-0000-0000-0000-000000000000",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "0f450c42-bdc6-4daf-b3b3-25b7d0c20d8d",
+			"name": "Obtener todos los Socios de un Club",
+			"url": "http://localhost:3000/api/v1/clubs/84b96c59-fa7b-4929-a7bb-7289c6960bd0/members",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Number of Socios > 0": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Number of Socios > 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Number of Socios > 0": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a131b809-73fe-4bdc-97c4-3bb1af72ef6c",
+			"name": "Obtener un Socio que pertenece a un Club",
+			"url": "http://localhost:3000/api/v1/clubs/84b96c59-fa7b-4929-a7bb-7289c6960bd0/members/d1fb4b06-b51f-484b-bea7-b608dd704c5c",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "90f0a9d4-c37a-4829-95d6-7359bbae803c",
+			"name": "Obtener un Socio que no es parte de un Club",
+			"url": "http://localhost:3000/api/v1/clubs/84b96c59-fa7b-4929-a7bb-7289c6960bd0/members/1edc4121-1eb1-4da7-b8d8-847f81a362b9",
+			"time": 10,
+			"responseCode": {
+				"code": 412,
+				"name": "Precondition Failed"
+			},
+			"tests": {
+				"Status code is 412": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 412": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 412": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "c842b8d3-d9e5-4783-97a1-9317cd739dfc",
+			"name": "Actualizar los Socios que pertenecen a un Club",
+			"url": "http://localhost:3000/api/v1/clubs/84b96c59-fa7b-4929-a7bb-7289c6960bd0/members",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "a00dd3ee-693f-4595-a655-eecfebc1785d",
+			"name": "Actualizar los socios de un club, con un socio inexistente",
+			"url": "http://localhost:3000/api/v1/clubs/84b96c59-fa7b-4929-a7bb-7289c6960bd0/members/00000000-0000-0000-0000-000000000000",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "ca153790-85c3-440e-b020-d944f33f470b",
+			"name": "Eliminar un socio que es parte de un club",
+			"url": "http://localhost:3000/api/v1/clubs/30093f1a-cb84-4841-a91a-f211cbc34401/members/1edc4121-1eb1-4da7-b8d8-847f81a362b9",
+			"time": 16,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "241526b6-9381-4e66-8a7a-f67fc10dcca2",
+			"name": "Eliminar un socio que no es parte de un club",
+			"url": "http://localhost:3000/api/v1/clubs/30093f1a-cb84-4841-a91a-f211cbc34401/members/d1fb4b06-b51f-484b-bea7-b608dd704c5c",
+			"time": 9,
+			"responseCode": {
+				"code": 412,
+				"name": "Precondition Failed"
+			},
+			"tests": {
+				"Status code is 412": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 412": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 412": true,
+					"Get expected error message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 167,
+	"collection": {
+		"requests": [
+			{
+				"id": "f38caf92-206d-4bd0-a505-606c932bf7b5",
+				"method": "POST"
+			},
+			{
+				"id": "226712f7-56dc-4dd2-b003-03afc919ddd6",
+				"method": "POST"
+			},
+			{
+				"id": "fcef159a-44b5-4ba4-8f86-4bb7bdc3f23a",
+				"method": "POST"
+			},
+			{
+				"id": "55dd20ec-a126-411e-9cf6-3a16b3d5177a",
+				"method": "POST"
+			},
+			{
+				"id": "e787705f-688b-4211-b748-70d8b2a1bc72",
+				"method": "POST"
+			},
+			{
+				"id": "223fbefc-8a35-4672-9263-878c45440f65",
+				"method": "POST"
+			},
+			{
+				"id": "9c0a03aa-b9cb-4928-82a7-3413f0c0b366",
+				"method": "POST"
+			},
+			{
+				"id": "0f450c42-bdc6-4daf-b3b3-25b7d0c20d8d",
+				"method": "GET"
+			},
+			{
+				"id": "a131b809-73fe-4bdc-97c4-3bb1af72ef6c",
+				"method": "GET"
+			},
+			{
+				"id": "90f0a9d4-c37a-4829-95d6-7359bbae803c",
+				"method": "GET"
+			},
+			{
+				"id": "c842b8d3-d9e5-4783-97a1-9317cd739dfc",
+				"method": "PUT"
+			},
+			{
+				"id": "a00dd3ee-693f-4595-a655-eecfebc1785d",
+				"method": "PUT"
+			},
+			{
+				"id": "ca153790-85c3-440e-b020-d944f33f470b",
+				"method": "DELETE"
+			},
+			{
+				"id": "241526b6-9381-4e66-8a7a-f67fc10dcca2",
+				"method": "DELETE"
+			}
+		]
+	}
+}

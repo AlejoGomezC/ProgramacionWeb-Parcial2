@@ -1,0 +1,325 @@
+{
+	"id": "2ca91e14-6ed3-4211-b6dd-91e261486b6b",
+	"name": "Club",
+	"timestamp": "2024-05-20T02:07:34.719Z",
+	"collection_id": "35040166-e9fd75c8-7265-4249-b414-66b9ca3e14b6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 13,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-05-20T02:07:34.174Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f2e7f7fd-8edb-45e0-af91-187aeee8fc29",
+			"name": "Crear un Club válido",
+			"url": "http://localhost:3000/api/v1/clubs",
+			"time": 72,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				72
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "94a2ab90-a20b-46b7-9c76-18cbe0de1da9",
+			"name": "Crear un Club inválido",
+			"url": "http://localhost:3000/api/v1/clubs",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "0f7f32b2-69ba-4a92-912a-474588385f5e",
+			"name": "Obtener todos los Clubs",
+			"url": "http://localhost:3000/api/v1/clubs",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Number of Clubs > 0": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Number of Clubs > 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Number of Clubs > 0": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "93b60ef7-5f56-47d7-9e85-2d060fca3389",
+			"name": "Obtener un Club por ID",
+			"url": "http://localhost:3000/api/v1/clubs/968edd59-90f2-4815-8a49-f285e8f18efe",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8c350781-8da8-493c-ab7a-1e645deb9cf5",
+			"name": "Obtener un Club por un ID que no existe",
+			"url": "http://localhost:3000/api/v1/clubs/00000000-0000-0000-0000-000000000000",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "8609c406-68c9-4b35-b660-eddc1b4df2f9",
+			"name": "Actualizar un Club",
+			"url": "http://localhost:3000/api/v1/clubs/968edd59-90f2-4815-8a49-f285e8f18efe",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e616f9cb-2dc7-411d-be1f-43e91ece42fc",
+			"name": "Actualizar un Club con un ID que no existe",
+			"url": "http://localhost:3000/api/v1/clubs/00000000-0000-0000-0000-000000000000",
+			"time": 5,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "f8f62382-6315-4641-9b70-4ae537cac26d",
+			"name": "Eliminar un Club por su ID",
+			"url": "http://localhost:3000/api/v1/clubs/968edd59-90f2-4815-8a49-f285e8f18efe",
+			"time": 11,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "ae892c1b-11d7-4031-a1e7-d6854922bd6a",
+			"name": "Eliminar un Club con un ID que no existe",
+			"url": "http://localhost:3000/api/v1/clubs/00000000-0000-0000-0000-000000000000",
+			"time": 5,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 139,
+	"collection": {
+		"requests": [
+			{
+				"id": "f2e7f7fd-8edb-45e0-af91-187aeee8fc29",
+				"method": "POST"
+			},
+			{
+				"id": "94a2ab90-a20b-46b7-9c76-18cbe0de1da9",
+				"method": "POST"
+			},
+			{
+				"id": "0f7f32b2-69ba-4a92-912a-474588385f5e",
+				"method": "GET"
+			},
+			{
+				"id": "93b60ef7-5f56-47d7-9e85-2d060fca3389",
+				"method": "GET"
+			},
+			{
+				"id": "8c350781-8da8-493c-ab7a-1e645deb9cf5",
+				"method": "GET"
+			},
+			{
+				"id": "8609c406-68c9-4b35-b660-eddc1b4df2f9",
+				"method": "PUT"
+			},
+			{
+				"id": "e616f9cb-2dc7-411d-be1f-43e91ece42fc",
+				"method": "PUT"
+			},
+			{
+				"id": "f8f62382-6315-4641-9b70-4ae537cac26d",
+				"method": "DELETE"
+			},
+			{
+				"id": "ae892c1b-11d7-4031-a1e7-d6854922bd6a",
+				"method": "DELETE"
+			}
+		]
+	}
+}
